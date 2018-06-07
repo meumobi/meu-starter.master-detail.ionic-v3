@@ -8,6 +8,9 @@ import { SharedModule } from '@shared/shared.module';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { ENV } from '@env';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -16,6 +19,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    ServiceWorkerModule.register('/ngsw-worker.js', { enabled: ENV.production }),
     SharedModule
   ],
   bootstrap: [IonicApp],

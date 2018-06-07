@@ -1,0 +1,18 @@
+{
+	"index": "/index.html",
+	"assetGroups": [
+		{
+			"name": "assets",
+			"installMode": "lazy",
+			"updateMode": "prefetch",
+			"resources": {
+				"files": [
+					"./build/polyfills.js",
+					"./build/vendor.js",
+					"./build/main.js",
+					"./build/main.css"
+				]
+			}
+		}
+	]
+}
