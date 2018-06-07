@@ -16,6 +16,7 @@ import { PostsProvider } from '@providers/posts';
 export class PostDetailsPage {
 
   post: Post;
+  cdnUrl: string = "http://meumobi.com";
 
   constructor(
     private postsProvider: PostsProvider,
