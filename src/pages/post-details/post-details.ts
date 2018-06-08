@@ -3,7 +3,6 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { Post } from '@models/post.interface';
 import { PostsProvider } from '@providers/posts';
-import { ENV } from '@env';
 
 @IonicPage({
   //name: 'post-details',
@@ -17,7 +16,6 @@ import { ENV } from '@env';
 export class PostDetailsPage {
 
   post: Post;
-  cdnUrl: string = ENV.cdnUrl;
 
   constructor(
     private postsProvider: PostsProvider,
