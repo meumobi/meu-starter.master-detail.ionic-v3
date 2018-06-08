@@ -13,11 +13,8 @@ export class ImagecdnPipe implements PipeTransform {
     var imagecdn = ENV.imagecdn;
     var result = value;
     imagecdn.forEach(element => {
-      var origin = element.origin;
-      var dest = element.dest;
-      if (value.includes(origin)) {
-        var att = value.split(origin);
-        result =  dest + att[1];
+      if (value.includes(element.origin)) {
+        result = value.replace(element.origin, element.dest);
       } 
     });   
     return result;
