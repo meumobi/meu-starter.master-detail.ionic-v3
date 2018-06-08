@@ -7,23 +7,19 @@ import { SharedModule } from '@shared/shared.module';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { MomentModule } from 'ngx-moment';
 
 @NgModule({
   declarations: [
     MyApp,
-    //HomePage,
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    MomentModule,
     SharedModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    //HomePage,
   ],
   providers: [
     StatusBar,
