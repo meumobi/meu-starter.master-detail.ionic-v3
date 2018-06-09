@@ -19,8 +19,8 @@
       <ion-col>
         <ion-slides *ngIf="post.images" loop="true" autoplay="3500" pager="{{post.images.length > 1 ? true:false}}">
           <ion-slide *ngFor="let image of post.images">
-            <img src="{{image.path | imagecdn }}" imageViewer/>
-            <div class="img-title">{{image.title }}</div>
+            <img src="{{image.path.substr(8) | imgServerUrly:'meumobi' }}" imageViewer/>
+            <div class="img-title">{{image.title}}</div>
           </ion-slide>
         </ion-slides>
       </ion-col>  

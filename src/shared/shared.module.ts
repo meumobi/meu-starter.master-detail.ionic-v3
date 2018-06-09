@@ -2,20 +2,19 @@ import { NgModule } from '@angular/core';
 
 import { MeuToastProvider } from './meu-toast.service';
 import { AnalyticsProvider } from './analytics.service';
-import { ImagecdnPipe } from '../pipes/imagecdn/imagecdn';
-
+import { ImgServerUrlyPipe } from '@pipes/.';
 
 @NgModule({
   imports: [],
   declarations: [
-    ImagecdnPipe
+    ImgServerUrlyPipe
   ],
   providers: [
     MeuToastProvider,
     AnalyticsProvider
   ],
   exports: [
-    ImagecdnPipe
+    ImgServerUrlyPipe
   ]
 })
 export class SharedModule { }
