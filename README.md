@@ -24,7 +24,7 @@ A starter template for PWA and Native Ionic v3 projects, providing best pratices
   - Show toast when new version available
   - Add to homescreen
   - Offline support
-- [] Handle dates and time w/ angular-moment
+- [x] [Handle dates and time with ngx-moment](#handle-dates-and-time-with-ngx-moment)
 - [] Push notification w/ OneSignal
   - [OneSignal: Ionic SDK Setup](https://documentation.onesignal.com/docs/ionic-sdk-setup)
   - [OneSignal: Web Push: Typical setup](https://documentation.onesignal.com/docs/web-push-typical-setup)
@@ -77,9 +77,6 @@ A starter template for PWA and Native Ionic v3 projects, providing best pratices
   - [Devdactic: How to Add Ionic Animations Using Angular (2 Different Ways!)](https://devdactic.com/animations-ionic-app/)
   - [ng4-animations](http://slides.yearofmoo.com/ng4-animations-preview/demo/)
 
-## Getting started
-
-
 # Features
 
 ## Image gallery
@@ -96,6 +93,14 @@ For the image gallery. We can make use of the [ion-slides](https://ionicframewor
 Ionic v3 is compatible with `@ngx-translate/http-loader@2.0.1` and `@ngx-translate/core@9.1.1`, upper versions require angular 6. Check breaking changes on changelog of these projects for more details.
 
 Should save selected language on App, and load it when launch.
+
+For unit testing we've tried implementation based on [example providing from ngx-translate repo](https://github.com/ngx-translate/example/blob/master/src/app/app.component.spec.ts), but it was not successful. An extensive [thread](https://github.com/ngx-translate/core/issues/636) about unit testing take place on github repo of the project.
+
+## Handle dates and time with ngx-moment
+
+[ngx-moment](https://github.com/urish/ngx-moment) provides [moment.js](https://momentjs.com/) pipes for Angular.
+
+- [How to use momentjs in code](https://github.com/urish/ngx-moment/issues/158#issuecomment-321317074)
 
 # ROADMAP
 

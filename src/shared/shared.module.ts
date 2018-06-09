@@ -5,9 +5,16 @@ import { AnalyticsProvider } from './analytics.service';
 import { ImgServerUrlyPipe } from '@pipes/.';
 import { ImgServerSrcsettifyPipe } from '@pipes/.';
 import { SafeUrlPipe } from '@pipes/.';
+import { MomentModule } from 'ngx-moment';
+
+const sharedModules = [
+  MomentModule
+];
 
 @NgModule({
-  imports: [],
+  imports: [
+    sharedModules
+  ],
   declarations: [
     ImgServerUrlyPipe,
     ImgServerSrcsettifyPipe,
@@ -20,7 +27,8 @@ import { SafeUrlPipe } from '@pipes/.';
   exports: [
     ImgServerUrlyPipe,
     ImgServerSrcsettifyPipe,
-    SafeUrlPipe
+    SafeUrlPipe,
+    sharedModules
   ]
 })
 export class SharedModule { }
