@@ -12,7 +12,7 @@ import { ENV } from '@env';
 })
 export class ImgServerUrlyPipe implements PipeTransform {
   
-  transform(src: string, provider: string, width = 1024) {
+  transform(src: string, width = 1024) {
     return ENV.imgServer.url + src + "?width=" + width
   }
 }
